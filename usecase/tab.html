@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Use Case</title>
+    <link rel="stylesheet" href="./tab.css">
+    <script src="./tab.js"></script>
+</head>
+<body>
+    <div class="form">
+        <form id="myForm">
+            <div class="input">
+                <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" pattern="[A-Za-z]+" title="Only alphabets are allowed" required><br>
+        </div>
+        <div class="field">
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required><br>
+        </div>
+            <div class="field">
+            <label for="phone">Contact No:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter Contact no" pattern="[7-9][0-9]{9}" title="Please enter a valid 10-digit contact number" required><br>
+            </div>
+<div class="field">
+    <label for="account">Account Type:</label>
+      <select id="account" name="account">
+        <option value="select" selected>Select Account Type</option>
+        <option value="saving">Savings Account</option>
+        <option value="current">Current Account</option>
+      </select>
+    </div>
+    </div>
+    <div class="button">
+      <button type="submit">Add Customer</button>
+    </div>
+          </form>
+    <table id="tabledata" style="display:none;">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact Number</th>
+            <th>Account Type</th>
+        </tr>
+          </table>
+        </div>
+</body>
+</html>
+</body>
+</html>
